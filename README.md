@@ -72,10 +72,10 @@ should do it.
 
 Output a selection of columns
 ```
-node dynamoDBtoCSV.js -t my-table -i rule_type_id_index -k "rule_type_id = :v1" -v "{\":v1\": {\"S\": \"my_primary_key_valye\"}}" -s "rule_type_id, created_by" -r us-west-2
+node dynamoDBtoCSV.js -t my-table -i rule_type_id_index -k "rule_type_id = :v1" -v "{\":v1\": {\"S\": \"my_primary_key_value\"}}" -s "rule_type_id, created_by" -r us-west-2
 ```
 
 Output stats
 ```
-node dynamoDBtoCSV.js -t my-table -i rule_type_id_index -k "rule_type_id = :v1" -v "{\":v1\": {\"S\": \"my_primary_key_valye\"}}" -s "rule_type_id, created_by" -r us-west-2 -a created_by
+node dynamoDBtoCSV.js -t my-table -i rule_type_id_index -k "rule_type_id = :v1" -v "{\":v1\": {\"S\": \"my_primary_key_value\"}}" -s "rule_type_id, created_by" -r us-west-2 -a created_by
 ```
